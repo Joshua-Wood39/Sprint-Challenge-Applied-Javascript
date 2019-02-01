@@ -25,11 +25,13 @@ class Carousel {
                     this.imgIndex[this.currentSlide].style.display = 'none';
                     this.currentSlide = 3;
                     this.imgIndex[this.currentSlide].style.display = 'flex';
+                    TweenMax.from(this.imgIndex[this.currentSlide], 1.5, {x:1000});
                     return;
             }
             this.imgIndex[this.currentSlide].style.display = 'none';
             this.currentSlide--;
             this.imgIndex[this.currentSlide].style.display = 'flex';
+            TweenMax.from(this.imgIndex[this.currentSlide], 1.5, {x:1000});
         }
 
         rightButton() {
@@ -37,11 +39,13 @@ class Carousel {
                 this.imgIndex[this.currentSlide].style.display = 'none';
                 this.currentSlide = 0;
                 this.imgIndex[this.currentSlide].style.display = 'flex';
+                TweenMax.from(this.imgIndex[this.currentSlide], 1.5, {x:-1000});
                 return;
             }
             this.imgIndex[this.currentSlide].style.display = 'none';
             this.currentSlide++;
             this.imgIndex[this.currentSlide].style.display = 'flex';
+            TweenMax.from(this.imgIndex[this.currentSlide], 1.5, {x:-1000});
 
         }
 
