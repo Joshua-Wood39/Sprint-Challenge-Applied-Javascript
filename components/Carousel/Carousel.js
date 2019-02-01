@@ -25,6 +25,7 @@ class Carousel {
                     this.imgIndex[this.currentSlide].style.display = 'none';
                     this.currentSlide = 3;
                     this.imgIndex[this.currentSlide].style.display = 'flex';
+                    return;
             }
             this.imgIndex[this.currentSlide].style.display = 'none';
             this.currentSlide--;
@@ -36,6 +37,7 @@ class Carousel {
                 this.imgIndex[this.currentSlide].style.display = 'none';
                 this.currentSlide = 0;
                 this.imgIndex[this.currentSlide].style.display = 'flex';
+                return;
             }
             this.imgIndex[this.currentSlide].style.display = 'none';
             this.currentSlide++;
