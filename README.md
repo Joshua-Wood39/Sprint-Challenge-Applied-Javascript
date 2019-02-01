@@ -32,13 +32,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+    - The DOM is a programming API that allows you to build documents, navigate their structure, and add, modify, or delete elements and content.
+
 2. What is an event?
+
+    - It is an event that takes place in the DOM when triggered by an external source, or triggered programmatically.
 
 3. What is an event listener?
 
+    - It is an event trigger that--through code--tells the DOM to do something to or with an element in the DOM. 
+
 4. Why would we convert a NodeList into an Array?
 
+    - If we wish to use Array Methods on a NodeList, it needs to be converted to an Array. A NodeList may behave like an array, but it is not.
+
 5. What is a component?
+
+    - A reusable structure within our code, ie. a Class that can take in an element and create new objects for use in the DOM (even applying sub-classes, event listeners, and new methods to these objects).
 
 ### Git Set up
 
